@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Guess my Number</title>
+</head>
+
+<body>
+
+<div class="guessForm">
+  <form action="">
+    Enter your guess:<br>
+      <input type="number" class="guess">
+      <br>
+    <input type="submit" value="Guess" id="submitGuess">
+    <input type="reset" value="Clear current guess" class="clearGuess">
+  </form>
+</div>
+
+<div class="gameFeedback">
+  <div id="mostRecentGuess"></div><br>
+  <div id="guessFeedback"></div>
+
+<div class="resetGameForm">
+  <form action="/script.js">
+    <input type="button" value="Reset game" class="resetGame">
+  </form>
+</div>
+
+<script src="scripts/main.js"></script>
+
+</body>
+
+</html>
