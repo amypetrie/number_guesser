@@ -7,25 +7,26 @@
 
 <body>
 
-<div class="guessForm">
-  <form action="">
-    Enter your guess:<br>
-      <input type="number" class="guess">
+<div class = guessInteraction>
+  <form id=guessForm>
+    <p>Enter your guess:</p>
+      <input type="number" id="userGuessInput">
       <br>
-    <input type="submit" value="Guess" id="submitGuess">
-    <input type="reset" value="Clear current guess" class="clearGuess">
+    <input type="button" value="Guess" id="submitGuess">
+    <input type="button" value="Clear current guess" id="clearGuess">
   </form>
 </div>
 
 <div class="gameFeedback">
-  <div id="mostRecentGuess"></div><br>
+  <div id="mostRecentGuess"></div>
   <div id="guessFeedback"></div>
-
-<div class="resetGameForm">
-  <form action="/script.js">
-    <input type="button" value="Reset game" class="resetGame">
-  </form>
 </div>
+
+
+  <form id="resetGameForm">
+    <input type="button" value="Reset game" id="resetGame">
+  </form>
+
 
 <script src="scripts/main.js"></script>
 
