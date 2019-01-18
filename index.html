@@ -7,11 +7,22 @@
 
 <body>
 
+<div id="createRange">
+  <form id="userCreateRangeForm" onSubmit="return false;">
+    Enter a minimum number:
+    <input type="number" id="userMinNumInput" oninput="verifyRangeInput()">
+    Enter a maximum number:
+    <input type="number" id="userMaxNumInput" oninput="verifyRangeInput()">
+    <br>
+    <input type="button" value="Submit" id="submitRange" disabled=true>
+  </form>
+</div>
+
 <div id="userGuessInteraction">
   <form id="userGuessForm" onSubmit="return false;">
-    <p>Enter your guess:</p>
-      <input type="number" id="userGuessInput" oninput="verifyUserInput()">
-      <br>
+    Enter your guess:
+    <input type="number" id="userGuessInput" oninput="verifyUserInput()">
+    <br>
     <input type="button" value="Guess" id="submitGuess" disabled=true>
     <input type="button" value="Clear current guess" id="clearGuess" disabled=true>
   </form>
@@ -20,12 +31,14 @@
 <div id="gameFeedback">
   <div id="mostRecentGuess"></div>
   <div id="guessFeedback"></div>
+  <div id="rangeInformation"></div>
 </div>
 
-
+<div id="resetGameSection">
   <form id="resetGameForm">
     <input type="button" value="Reset game" id="resetGame" disabled=true>
   </form>
+</div>
 
 
 <script src="scripts/main.js"></script>
