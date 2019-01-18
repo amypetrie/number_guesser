@@ -7,24 +7,24 @@
 
 <body>
 
-<div class = guessInteraction>
-  <form id=guessForm>
+<div id="userGuessInteraction">
+  <form id="userGuessForm" onSubmit="return false;">
     <p>Enter your guess:</p>
-      <input type="number" id="userGuessInput">
+      <input type="number" id="userGuessInput" oninput="verifyUserInput()">
       <br>
-    <input type="button" value="Guess" id="submitGuess">
-    <input type="button" value="Clear current guess" id="clearGuess">
+    <input type="button" value="Guess" id="submitGuess" disabled=true>
+    <input type="button" value="Clear current guess" id="clearGuess" disabled=true>
   </form>
 </div>
 
-<div class="gameFeedback">
+<div id="gameFeedback">
   <div id="mostRecentGuess"></div>
   <div id="guessFeedback"></div>
 </div>
 
 
   <form id="resetGameForm">
-    <input type="button" value="Reset game" id="resetGame">
+    <input type="button" value="Reset game" id="resetGame" disabled=true>
   </form>
 
 
