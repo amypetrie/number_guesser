@@ -9,7 +9,7 @@ var correctNumber = generateRandomNumber(min_num, max_num);
 var currentUserGuess;
 var userGuessCounter = 0;
 
-window.onload = setFormNumberRange();
+window.onload = resetGameVariables();
 
 function resetCurrentGame(){
   resetGameVariables();
@@ -68,7 +68,7 @@ function clearRangeInput(){
 
 function changeInputToNumber(input_value){
   return parseInt(input_value, 10);
-} 
+}
 
 function verifyRangeInput(){
   let range_min_value = changeInputToNumber(userMinNumInput.value);
@@ -141,4 +141,3 @@ submitGuessButton.addEventListener('click',processGuess);
 clearGuessButton.addEventListener('click',clearGuessInput);
 resetGameButton.addEventListener('click',resetCurrentGame);
 submitRangeButton.addEventListener('click',processRangeChange);
-
