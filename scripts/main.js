@@ -119,7 +119,7 @@ function displayGuess(){
 function displayGuessFeedback() {
   document.getElementById("rangeInformation").innerHTML = "";
   if(currentUserGuess == correctNumber){
-    document.getElementById("guessFeedback").innerHTML = "BOOM! <b>That's right!</b> Let's play again...";
+    document.getElementById("guessFeedback").innerHTML = "BOOM! <b>That's right!</b> Let's play again...<b>but with a harder range! Check it out below.</b>";
     createHarderRange();
   }
   else if(currentUserGuess < correctNumber){
